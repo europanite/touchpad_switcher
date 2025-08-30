@@ -1,11 +1,26 @@
 #!/bin/bash
+set -euo pipefail
 
-STATE=$(gsettings get org.gnome.desktop.peripherals.touchpad send-events | tr -d "'")
+SCHEMA="org.gnome.desktop.peripherals.touchpad"
+KEY="send-events"
 
-if [[ "$STATE" == "disabled" ]]; then
-  gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
-  echo "Touchpad is enabled"
-else
-  gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
-  echo "Touchpad is disabled"
-fi
+STATE=$(gsettings get "$SCHEMA" "$KEY" | tr -d "'")
+
+case "$STATE" in
+  disabled)
+    gsettings set "$SCHEMA" "$KEY" enabled
+    echo "Touchpad: disabled -> enabled"
+    ;;
+  disabled-on-external-mouse)
+    gsettings set "$SCHEMA" "$KEY" enabled
+    echo "Touchpad: disabled-on-external-mouse -> enabled"
+    ;;
+  enabled)
+    gsettings set "$SCHEMA" "$KEY" disabled
+    echo "Touchpad: enabled -> disabled"
+    ;;
+  *)
+    echo "Unknown touchpad state: $STATE"
+    exit 1
+    ;;
+esac
