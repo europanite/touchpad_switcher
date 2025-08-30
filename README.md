@@ -34,4 +34,4 @@ chmod +x touchpad-switcher.sh
 - If your system uses disabled-on-external-mouse, it will be treated as disabled and switched to enabled.
 
 ## License
-- MIT
+- Apache License 2.0
