@@ -16,7 +16,7 @@ It flips `org.gnome.desktop.peripherals.touchpad send-events` between `enabled` 
 ## Installation
 Clone this repository and make the script executable:
 ```bash
-curl -O https://raw.githubusercontent.com/europanite/touchpad-switcher./main/touchpad.sh
+curl -O https://raw.githubusercontent.com/europanite/touchpad-switcher/main/touchpad.sh
 chmod +x touchpad-switcher.sh
 ./touchpad-switcher.sh
 ```
