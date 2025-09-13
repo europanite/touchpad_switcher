@@ -1,4 +1,3 @@
-# touchpad_switcher
 # [Touchpad Switcher](https://github.com/europanite/touchpad_switcher "Touchpad Switcher")
 
 A shell script to **toggle your touchpad on/off** in GNOME.  
