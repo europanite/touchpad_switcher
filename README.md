@@ -21,7 +21,7 @@ Clone this repository and make the script executable:
 curl -O https://raw.githubusercontent.com/europanite/touchpad-switcher/main/touchpad.sh
 chmod +x touchpad-switcher.sh
 ./touchpad-switcher.sh
-```
+``` 
 
 ## Bind to a Keyboard Shortcut (GNOME)
 - Open Settings → Keyboard → Keyboard Shortcuts
