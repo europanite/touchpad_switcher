@@ -13,37 +13,37 @@
   <a href="./README.fr.md">🇫🇷 Français</a>
 </p>
 
-A shell script to **toggle your touchpad on/off** in GNOME.  
+Um script shell para **ativar ou desativar o touchpad** no GNOME.  
 
-It flips `org.gnome.desktop.peripherals.touchpad send-events` between `enabled` and `disabled`.
+Ele alterna `org.gnome.desktop.peripherals.touchpad send-events` entre `enabled` e `disabled`.
 
-## Features
-- 🖱️ Enable or disable the touchpad with a single command
-- 🖥️ Works on GNOME (Wayland/Xorg)
-- ⌨️ Easy to bind to a keyboard shortcut
+## Recursos
+- 🖱️ Ative ou desative o touchpad com um único comando
+- 🖥️ Funciona no GNOME (Wayland/Xorg)
+- ⌨️ Fácil de associar a um atalho de teclado
 
-## Requirements
-- GNOME desktop environment
-- `gsettings` available in PATH
+## Requisitos
+- Ambiente de desktop GNOME
+- `gsettings` disponível no PATH
 
-## Installation
-Clone this repository and make the script executable:
+## Instalação
+Clone este repositório e torne o script executável:
 ```bash
 curl -O https://raw.githubusercontent.com/europanite/touchpad-switcher/main/touchpad.sh
 chmod +x touchpad-switcher.sh
 ./touchpad-switcher.sh
 ``` 
 
-## Bind to a Keyboard Shortcut (GNOME)
-- Open Settings → Keyboard → Keyboard Shortcuts
-- Add a new shortcut:
--- Name: Touchpad Switcher
--- Command: /full/path/to/touchpad-switcher.sh
-- Shortcut: Choose your favorite (e.g. Super+Alt+T)
+## Associar a um atalho de teclado (GNOME)
+- Abra Settings → Keyboard → Keyboard Shortcuts
+- Adicione um novo atalho:
+-- Nome: Touchpad Switcher
+-- Comando: /full/path/to/touchpad-switcher.sh
+- Atalho: escolha sua combinação preferida (por exemplo, Super+Alt+T)
 
-## Notes
-- This script toggles only between enabled and disabled.
-- If your system uses disabled-on-external-mouse, it will be treated as disabled and switched to enabled.
+## Observações
+- Este script alterna apenas entre enabled e disabled.
+- Se o sistema usar disabled-on-external-mouse, esse estado será tratado como disabled e alterado para enabled.
 
-## License
+## Licença
 - Apache License 2.0

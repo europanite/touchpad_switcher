@@ -13,37 +13,37 @@
   <a href="./README.fr.md">🇫🇷 Français</a>
 </p>
 
-A shell script to **toggle your touchpad on/off** in GNOME.  
+一个用于在 GNOME 中**开启或关闭触摸板**的 shell 脚本。  
 
-It flips `org.gnome.desktop.peripherals.touchpad send-events` between `enabled` and `disabled`.
+它会在 `enabled` 和 `disabled` 之间切换 `org.gnome.desktop.peripherals.touchpad send-events` 的值。
 
-## Features
-- 🖱️ Enable or disable the touchpad with a single command
-- 🖥️ Works on GNOME (Wayland/Xorg)
-- ⌨️ Easy to bind to a keyboard shortcut
+## 功能
+- 🖱️ 使用一条命令启用或禁用触摸板
+- 🖥️ 支持 GNOME（Wayland/Xorg）
+- ⌨️ 可轻松绑定到键盘快捷键
 
-## Requirements
-- GNOME desktop environment
-- `gsettings` available in PATH
+## 系统要求
+- GNOME 桌面环境
+- PATH 中可以使用 `gsettings`
 
-## Installation
-Clone this repository and make the script executable:
+## 安装
+克隆此仓库并为脚本添加执行权限：
 ```bash
 curl -O https://raw.githubusercontent.com/europanite/touchpad-switcher/main/touchpad.sh
 chmod +x touchpad-switcher.sh
 ./touchpad-switcher.sh
 ``` 
 
-## Bind to a Keyboard Shortcut (GNOME)
-- Open Settings → Keyboard → Keyboard Shortcuts
-- Add a new shortcut:
--- Name: Touchpad Switcher
--- Command: /full/path/to/touchpad-switcher.sh
-- Shortcut: Choose your favorite (e.g. Super+Alt+T)
+## 绑定键盘快捷键（GNOME）
+- 打开 Settings → Keyboard → Keyboard Shortcuts
+- 添加一个新快捷键：
+-- 名称：Touchpad Switcher
+-- 命令：/full/path/to/touchpad-switcher.sh
+- 快捷键：选择你喜欢的组合键（例如 Super+Alt+T）
 
-## Notes
-- This script toggles only between enabled and disabled.
-- If your system uses disabled-on-external-mouse, it will be treated as disabled and switched to enabled.
+## 注意事项
+- 此脚本仅在 enabled 和 disabled 之间切换。
+- 如果系统使用 disabled-on-external-mouse，该状态将被视为 disabled，并切换为 enabled。
 
-## License
+## 许可证
 - Apache License 2.0
