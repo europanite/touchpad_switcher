@@ -1,5 +1,5 @@
 title: "touchpad_switcher"
-description: "A shell script to remove all  cuda libraries"
+description: "A shell script to toggle your touchpad on/off in GNOME."
 baseurl: "/touchpad_switcher"
 url: "https://europanite.github.io"
 theme: minima
